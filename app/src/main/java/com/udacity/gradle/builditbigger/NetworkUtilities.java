@@ -22,7 +22,6 @@ public class NetworkUtilities extends AsyncTask<Context, Void, String> {
     private static MyApi myApiService = null;
     private Context context;
     private static final String JOKE = "joke";
-    private int testCode = 0;
 
 
     @Override
@@ -49,12 +48,11 @@ public class NetworkUtilities extends AsyncTask<Context, Void, String> {
 
         try {
 
-
             return myApiService.servJokes().execute().getData();
 
 
         } catch (IOException e) {
-            return e.getMessage();
+            return null;
         }
     }
 

@@ -30,6 +30,7 @@ public class MainActivityTest {
     @Rule
     public ActivityTestRule<MainActivity> mActivityTestRule = new ActivityTestRule<>(MainActivity.class);
 
+
     @Test
     public void mainActivityTest() {
 
